@@ -1,0 +1,146 @@
+
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+:root{
+    --color-white: hsl(260, 12%, 95%);
+    --color-light: hsl(255, 7%, 88%);
+    --color-gray: hsl(252,15%,60%);
+    --color-primary: hsl(252,75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success: hsl(120,95%,60%);
+    --color-danger: hsl(0,95%,60%);
+    --color-dark: hsl(252,30%,15%);
+    --color-black: hsl(252,30%,8%);
+
+--border-radius: 2rem;
+--card-border-radius: 1rem;
+
+----btn-padding: 6rem 2rem;
+
+--search-padding: 6rem 1rem;
+--card-padding: 1rem;
+}
+
+body{
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-dark);
+    background: var(--color-gray);
+overflow-x: hidden;
+}
+
+/* General STYLEs */
+.container{
+    width:90%;
+    /* margin: 0 auto; */
+}
+
+.img{
+    display: block;
+    width:none;
+}
+
+.profile-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+}
+.main{
+    text-align: center;
+}
+
+.profil-picture{
+    width: 3rem;
+    /* aspect-ratio: 1 / 1; */
+    border-radius: 50px;
+    overflow: hidden;
+}
+.profil-picture:hover{
+    opacity: 0.75;
+}
+
+.btn{
+    padding: var(--btn-padding);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 300ms ease all;
+    padding: 8px;
+}
+
+.btn:hover{
+    opacity: 0.75rem;
+}
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.text-bold{
+    font-weight: 500;
+}
+.text-gry{
+    color:var(--color-gray);
+}
+
+nav{
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 0.7rem ;
+    background: var(--color-white);
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+nav .search-bar{
+padding: 1rem;
+background: var(--color-light);
+border-radius:var(--border-radius) ;
+}
+nav .search-bar input[type="search"]
+{
+    background:transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size:  .9rem;
+    color: var(--color-dark);
+}
+nav .search-bar input[type="search"]::placeholder{
+    color:var(--color-black);
+}
+
+.add-post{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;
+    color: var(--color-dark);
+}
+.logo span{
+color: var(--color-danger);
+}
